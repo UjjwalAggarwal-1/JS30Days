@@ -32,15 +32,18 @@ console.log('loops')
 // }
 
 
-// countries = ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
+countries = ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
 // for(a in countries){
 //     console.log(countries[a].toLowerCase())
 // }
-// countries2 =[]
-// for(a in countries){
-//     countries2.push([countries[a],countries[a].substr(0,3),countries[a].length  ])
+// for(a of countries){
+//     console.log(a.toLowerCase())
 // }
-// countries2.reverse()
-// for (var i = 0; i<11; i++){
-//         console.log(countries2[i]);
-//     }
+countries2 =[]
+for(a in countries){
+    countries2.push([countries[a],countries[a].substr(0,3),countries[a].length  ])
+}
+countries2.reverse()
+for (var i = 0; i<11; i++){
+        console.log(countries2[i]);
+    }
